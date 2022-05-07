@@ -1,0 +1,74 @@
+.hero{
+  position: relative;
+  background: #F3D7B7;
+  // background-blend-mode: overlay;
+  background-image: url(../../images/hero-bgi.png);
+  background-repeat: no-repeat;
+  background-size: 710px 596px;
+  background-position: calc(50% + 390px);  
+}
+.hero::before{
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 32px);
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-image: url(../../images/kiyik.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.hero__inner {
+  width: 450px;
+  padding: 116px 0 285px 100px; 
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+.hero__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .hero{
+    background-image: url(../../images/hero-bgi@2x.png);
+  }
+
+  .hero::before{
+    background-image: url(../../images/kiyik@2x.png);
+  }
+}
